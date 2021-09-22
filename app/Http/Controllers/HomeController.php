@@ -10,4 +10,9 @@ class HomeController extends Controller
     {
         return "Ini Dari Home Controller";
     }
+
+    public function show_html()
+    {
+        return view('halo');
+    }
 }

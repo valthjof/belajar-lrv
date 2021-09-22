@@ -14,13 +14,13 @@ use App\Http\Controllers\HomeController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 Route::get('/halo', function () {
     return "Halo Semuanya";
 });
 
-// Route::get('/home', [HomeController::class, 'index']);
+Route::get('/home', [HomeController::class, 'index']);
 Route::get('/home/show_html', [HomeController::class, 'show_html']);
